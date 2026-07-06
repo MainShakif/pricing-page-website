@@ -1,7 +1,10 @@
-header {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+#pricing-section {
   max-width: 1280px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
 }
 /* navbar */
 #nav-container {
@@ -33,15 +36,77 @@ header {
   /* background-color: rgb(241, 119, 4); */
 }
 .btn {
-  /* background-color: orangered; */
+  background-color: rgba(0, 0, 255, 0.725);
   padding: 15px 35px;
   border: none;
   border-radius: 25px;
   font-weight: 800;
-  color: lightcoral;
+  color: white;
   cursor: pointer;
 }
 .btn:hover {
-  background-color: lightgray;
+  background-color: lightcoral;
 }
 /** navbar end here */
+
+/* pricing container */
+#pricing-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+#pricing-container .price-card {
+  border: 2px solid rgb(9, 97, 132);
+}
+.price-card {
+  background-color: aliceblue;
+  border-radius: 25px;
+  text-align: center;
+}
+.price-card h4 {
+  color: rgba(0, 0, 255, 0.689);
+  font-weight: 600;
+}
+.price-card h3 {
+  color: rgba(0, 0, 0, 0.712);
+  font: 2.5rem;
+}
+.price-card h2 span {
+  color: lightgray;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+.price-card .green {
+  color: green;
+}
+.features {
+  text-align: left;
+}
+.box-shadow {
+  background-color: rgb(70, 193, 125);
+  box-shadow: 2px 6px 10px 0 rgb(70, 193, 125);
+}
+.features h3 {
+  margin-left: 25px;
+  background-color: rgba(211, 211, 211, 0.532);
+  padding: 5px 10px;
+  width: 300px;
+}
+.features ul {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+.features ul li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.features a {
+  color: rgba(0, 0, 0, 0.693);
+  font-weight: 700;
+}
+.features a:hover {
+  background-color: lightgray;
+}
+/* pricing container end here */
