@@ -3,7 +3,8 @@ body {
 }
 header,
 #pricing-heading-container,
-#pricing-section {
+#pricing-section,
+#features-comparison {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -99,7 +100,7 @@ header,
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  gap: 20px;
+  gap: 40px;
 }
 #pricing-container .price-card {
   border: 2px solid rgb(9, 97, 132);
@@ -166,4 +167,49 @@ header,
   background-color: rgba(211, 211, 211, 0.127);
 }
 
+.card-2 {
+  position: relative;
+}
+
+.badge img {
+  position: absolute;
+  top: -50px;
+  right: -35px;
+  /* background-color: rgba(0, 0, 255, 0.296); */
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#features-comparison {
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+#features-comparison caption {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 50px 0;
+}
+#features-comparison th {
+  background-color: rgba(0, 0, 255, 0.725);
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#features-comparison td {
+  /* background-color: rgba(0, 0, 255, 0.725); */
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+#features-comparison tr:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+#features-comparison th,
+td {
+  border: 2px solid black;
+  padding: 10px 50px;
+}
 /* pricing container end here */
