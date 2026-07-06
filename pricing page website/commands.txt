@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Just create a html and a css file."
+git branch -M main
+git remote add origin https://github.com/MainShakif/pricing-page-website.git
+git push -u origin main
